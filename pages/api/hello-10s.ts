@@ -15,3 +15,9 @@ export default function handler(
     .status(200)
     .json({ name: "John Doe", time: Math.floor(new Date().getTime() / 1000) });
 }
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
