@@ -14,9 +14,3 @@ export default function handler(
     .status(200)
     .json({ name: "John Doe" });
 }
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
