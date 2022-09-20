@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 
 const request = async (currentEtag) => {
   const response = await fetch(
-    "https://repro-304-not-modified.vercel.app/api/hello-10s",
+    "https://repro-304-not-modified.vercel.app/api/hello-10s-silent",
     {
       headers: currentEtag
         ? {
