@@ -9,7 +9,7 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.setHeader("Cache-Control", "s-maxage=10");
+  res.setHeader("Cache-Control", "max-age=10, public");
   res
     .status(200)
     .json({ name: "John Doe" });

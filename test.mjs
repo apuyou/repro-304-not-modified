@@ -26,6 +26,7 @@ const request = async (currentEtag) => {
       "x-vercel-cache"
     )} x-cache=${response.headers.get("x-cache")} time=${time}`
   );
+  console.log(response.headers.get("cache-control"))
 
   setTimeout(() => {
     request(etag || currentEtag);
